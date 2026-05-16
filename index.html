@@ -15,24 +15,40 @@
     --rule: #ddd8d0;
   }
 @media (max-width: 768px) {
-  .contact-container { /* Replace with your actual section/container class name */
-    display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center;
-    background-color: #000000; /* Forces a solid black background */
-    padding: 20px;
+
+  #contact {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    background-color: #000000 !important; /* Enforces a black background */
+    padding: 40px 20px !important;
+    height: auto !important;
   }
 
-  .contact-image-class { /* Replace with your actual illustration/image class name */
-    width: 100%;
-    max-width: 400px; /* Keeps the illustration from getting too large */
-    margin-bottom: 20px; /* Pushes the text down below the image */
+  #contact img, #contact svg {
+    order: 1 !important; /* Puts image first */
+    width: 100% !important;
+    max-width: 350px !important;
+    margin-bottom: 30px !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
   }
 
-  .contact-text-class { /* Replace with your actual text class name */
-    color: #dfba73; /* Keeps your gold text color legible over the black background */
-    text-align: center;
-    width: 100%;
+  .contact-grid {
+    order: 2 !important; /* Forces text below the image */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+}
     
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
