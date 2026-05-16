@@ -14,7 +14,26 @@
     --muted: #7a7570;
     --rule: #ddd8d0;
   }
+@media (max-width: 768px) {
+  .contact-container { /* Replace with your actual section/container class name */
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;
+    background-color: #000000; /* Forces a solid black background */
+    padding: 20px;
+  }
 
+  .contact-image-class { /* Replace with your actual illustration/image class name */
+    width: 100%;
+    max-width: 400px; /* Keeps the illustration from getting too large */
+    margin-bottom: 20px; /* Pushes the text down below the image */
+  }
+
+  .contact-text-class { /* Replace with your actual text class name */
+    color: #dfba73; /* Keeps your gold text color legible over the black background */
+    text-align: center;
+    width: 100%;
+    
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   html { scroll-behavior: smooth; }
